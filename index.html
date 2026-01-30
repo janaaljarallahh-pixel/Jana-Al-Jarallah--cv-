@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jana Al Jarallah | CV</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jana Mohammed Al Jarallah | CV</title>
+  <meta name="description" content="Jana Mohammed Al Jarallah — Software Engineering student and internship candidate in Riyadh, Saudi Arabia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Jana Mohammed Al Jarallah</h1>
-  <p>Software Engineering Student – Alfaisal University</p>
-  <p>This CV website is under construction.</p>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <h1 class="name">Jana Mohammed Al Jarallah</h1>
+        <p class="headline">Software Engineering Student • Internship Candidate</p>
+        <p class="subhead">Riyadh, Saudi Arabia</p>
+      </div>
+
+      <div class="contact-card" aria-label="Contact">
+        <div class="contact-row">
+          <span class="label">Email</span>
+          <a class="value" href="mailto:janaalljarallahh@gmail.com">janaalljarallahh@gmail.com</a>
+        </div>
+        <div class="contact-row">
+          <span class="label">Phone</span>
+          <a class="value" href="tel:+966555118887">+966 55 511 8887</a>
+        </div>
+        <div class="contact-row">
+          <span class="label">LinkedIn</span>
+          <a class="value" href="https://www.linkedin.com/in/jana-al-jarallah-403547300" target="_blank" rel="noreferrer">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>
+        Motivated Software Engineering student at Alfaisal University with hands-on experience in business development and corporate operations.
+        Strong foundation in programming, software design, databases, and systems, combined with real-world exposure to executive support,
+        digital presence development, and banking/HR operational coordination. Seeking an internship to apply technical skills in an impact-driven team.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+
+      <article class="role">
+        <div class="role-top">
+          <div>
+            <h3>Corporate Business Development Manager</h3>
+            <p class="meta">Middle East Pioneering Company • Riyadh, Saudi Arabia</p>
+          </div>
+          <p class="dates">Jan 2024 – Present</p>
+        </div>
+        <ul>
+          <li>Managed cross-department coordination and executive-to-management communications.</li>
+          <li>Drafted, designed, and distributed official internal and external corporate correspondence.</li>
+          <li>Led early branding initiatives including company logo design and public brand representation.</li>
+          <li>Consulted on company website creation and launch, including domain acquisition and public representation.</li>
+          <li>Executed initial operational workflows using corporate banking platforms (Al Rajhi Business, AlAhli eCorp).</li>
+          <li>Coordinated HR operational setup, payroll execution, transfers, and approval workflows prior to CEO confirmation.</li>
+          <li>Negotiated banking requests and liaised directly with financial institutions.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top">
+          <div>
+            <h3>Personal Assistant to the CEO</h3>
+            <p class="meta">Middle East Pioneering Company • Riyadh, Saudi Arabia</p>
+          </div>
+          <p class="dates">Sep 2023 – Dec 2023</p>
+        </div>
+        <ul>
+          <li>Provided direct executive support for confidential documentation, scheduling, and coordination.</li>
+          <li>Supported early operational setup and internal process organization for a growing company.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section two-col">
+      <div>
+        <h2>Education</h2>
+        <article class="card">
+          <h3>BSc in Software Engineering</h3>
+          <p class="meta">Alfaisal University • Riyadh, Saudi Arabia</p>
+          <p class="dates">2023 – 2027</p>
+          <p class="small muted">
+            Relevant coursework: OOP I/II, Algorithms & Data Structures, Software Requirements, Software Design & Architecture, DBMS, Operating Systems,
+            Web & Mobile App Development, IoT, Discrete Structures, Intro to Cybersecurity.
+          </p>
+        </article>
+      </div>
+
+      <div>
+        <h2>Technical Skills</h2>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">C++</span>
+          <span class="chip">Visual Studio Code</span>
+          <span class="chip">Android Studio</span>
+          <span class="chip">Draw.io</span>
+        </div>
+
+        <h2 class="mt">Certifications</h2>
+        <ul class="clean">
+          <li>Scrum Fundamentals Certified</li>
+          <li>Fundamentals of Predictive Management</li>
+          <li>Modern AI Technologies for Business & Institutional Development</li>
+          <li>Leadership and Team Development</li>
+        </ul>
+
+        <h2 class="mt">Volunteer</h2>
+        <ul class="clean">
+          <li>Virtual Reality (VR) Workshop — KACST</li>
+        </ul>
+
+        <h2 class="mt">Languages</h2>
+        <ul class="clean">
+          <li>Arabic (Native)</li>
+          <li>English (Professional)</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="small muted">Last updated: <span id="updated"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    const d = new Date();
+    document.getElementById("updated").textContent = d.toLocaleDateString(undefined, { year: "numeric", month: "long" });
+  </script>
 </body>
 </html>
+
